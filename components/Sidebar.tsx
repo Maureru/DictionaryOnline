@@ -5,7 +5,11 @@ import { MdDarkMode } from 'react-icons/md';
 import { AiOutlineClose } from 'react-icons/ai';
 import { FiSearch } from 'react-icons/fi';
 import { BiSun } from 'react-icons/bi';
+import { BsTwitter } from 'react-icons/bs';
+import { BsInstagram } from 'react-icons/bs';
+import { BsGithub } from 'react-icons/bs';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 function Sidebar({state, control, mounted, fetchDefinition, fetchFavorite, word, setWord, dispatch}) {
     const { systemTheme, theme, setTheme } = useTheme();
@@ -119,6 +123,20 @@ function Sidebar({state, control, mounted, fetchDefinition, fetchFavorite, word,
                   <p>You have no favorite : (</p>
                 </div>
               )}
+              <div className='absolute bottom-2 left-[50%] translate-x-[-50%]'>
+                <div className='flex gap-3 justify-center'>
+                    <Link href="https://twitter.com/mauuxxix">
+                        <BsTwitter className='text-2xl'/>
+                    </Link>
+                    <Link href="https://github.com/xMauu">
+                        <BsGithub className='text-2xl'/>
+                    </Link>
+                    <Link href="https://www.instagram.com/mauxxix_/">
+                        <BsInstagram className='text-2xl'/>
+                    </Link>
+                </div>
+                <p className='text-center mt-2'>All Rights Reserve • xMau 2022</p>
+              </div>
             </div>
         </motion.div>
 
@@ -178,6 +196,18 @@ function Sidebar({state, control, mounted, fetchDefinition, fetchFavorite, word,
                   <p>You have no favorite : (</p>
                 </div>
               )}
+              <div className='flex gap-3 justify-center'>
+                <Link href="https://twitter.com/mauuxxix">
+                    <BsTwitter className='text-2xl'/>
+                </Link>
+                <Link href="https://github.com/xMauu">
+                    <BsGithub className='text-2xl'/>
+                </Link>
+                <Link href="https://www.instagram.com/mauxxix_/">
+                    <BsInstagram className='text-2xl'/>
+                </Link>
+              </div>
+              <p className='text-center mt-2'>All Rights Reserve • xMau 2022</p>
             </div>
           </div>
     </div>
