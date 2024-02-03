@@ -63,6 +63,10 @@ export default function Home() {
     return <></>;
   }
 
+  for (let i = 50; i > 0; i = i - 5) {
+    console.log(i);
+  }
+
   return (
     <div>
       <Head>
